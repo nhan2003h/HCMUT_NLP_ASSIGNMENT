@@ -1,0 +1,30 @@
+Câu hỏi: em có thể nhắc lại tất cả các tour được không?
+(WH-QUERY  (nhắc s1 (AGENT s1 em) (THEME  (WHICH  tour))))
+(PRINT-ALL ?x (TOUR ?x))
+
+
+Câu hỏi: đi từ Hồ Chí Minh tới Nha Trang hết bao lâu?
+(WH-QUERY  (đi s1 (HOW-LONG  (WHICH  bao_lâu)) (FROM-LOC  (NAME h1 hồ_chí_minh)) (TO-LOC  (NAME n1 nha_trang))))
+(PRINT-ALL ?x (RUN-TIME ?x) (DTIME ?x HCM ?t) (ATIME ?x NT ?t))
+
+
+Câu hỏi: đi từ Hồ Chí Minh tới Đà Nẵng hết bao lâu?
+(WH-QUERY  (đi s1 (HOW-LONG  (WHICH  bao_lâu)) (FROM-LOC  (NAME h1 hồ_chí_minh)) (TO-LOC  (NAME đ1 đà_nẵng))))
+(PRINT-ALL ?x (RUN-TIME ?x) (DTIME ?x HCM ?t) (ATIME ?x DN ?t))
+
+
+Câu hỏi: có bao nhiêu tour đi Phú Quốc vậy bạn?
+(WH-QUERY  (có s1 (QUANT  (HOW-MANY  bao_nhiêu) (WHICH  tour)) (TO-LOC  (NAME p1 phú_quốc))))
+(PRINT-ALL ?x (TOUR PQ ?x))
+
+
+Câu hỏi: tour Nha Trang đi bằng phương tiện gì vậy?
+(WH-QUERY  (đi s1 (INSTR  (WHICH  phương_tiện)) (TO-LOC  (NAME n1 nha_trang))))
+(PRINT-ALL ?x (BY NT ?x))
+
+
+Câu hỏi: đi Nha Trang có những ngày nào nhỉ?
+(WH-QUERY  (đi s1 (DATE  (WHICH  ngày)) (TO-LOC  (NAME n1 nha_trang))))
+(PRINT-ALL ?x (DATE NT ?x))
+
+

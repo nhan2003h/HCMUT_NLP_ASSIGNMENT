@@ -1,0 +1,32 @@
+Sentences -> Sentence | Sentence Wh
+Sentence -> Predicate | Subject Predicate | Adverb Subject Predicate
+Subject -> NounPhrase
+Predicate -> VerbPhrase | AdjectivePhrase
+Adverb -> TimeAdverb
+NounPhrase -> NounPhrase_ PrepositionAfter | NounPhrase_
+NounPhrase_ -> Quantifier Noun | PrepositionBefore Noun | ProperNoun | Pronoun | Noun | Noun PrepositionalPhrase
+VerbPhrase -> VerbPhrase_ | VerbPhrase_ AdverbAfter_Verb
+VerbPhrase_ -> Verb Noun Adjective | Verb AdjectivePhrase | Verb | Verb NounPhrase | AdverbBefore_Verb Verb
+AdjectivePhrase -> Adjective | Adjective AdverbAfter_Adjective | AdverbBefore_Adjective Adjective
+PrepositionalPhrase -> Preposition | Preposition Noun
+Verb -> InanimateVerb | AnimateVerb
+Adjective -> AnimateAdjective | InanimateAdjective
+TimeAdverb -> TimeExpression
+Wh -> "không" | "hả" | "sao" | "chăng"
+Quantifier -> "những" | "mấy" | "các" | "vài"
+PrepositionBefore -> "những" | "cái"
+PrepositionAfter -> "này" | "ấy"
+AdverbBefore_Verb -> "đã" | "cũng" | "chưa" | "đừng" | "đang" | "không"
+AdverbAfter_Verb -> "rồi"
+AdverbBefore_Adjective -> "rất" | "cũng" | "không" | "vô cùng"
+AdverbAfter_Adjective -> "lắm" | "quá"
+Noun -> "xe hơi" | "phương tiện" | "khách sạn" | "nhà nghỉ" | "phong cảnh" | "vé" | "giá" | "ngày" | "thời tiết" | "dịch vụ" | "ẩm thực" | "homestay" | "máy bay" | "thuyền" 
+ProperNoun -> "Nha Trang" | "Huế" | "Hà Nội" | "TPHCM" | "Mỹ" | "Singapore"
+Pronoun -> "tôi" | "anh" | "chị" | "em" | "ông" | "bác" | "chúng ta" | "chúng tôi"   | "họ" | "bạn"
+InanimateVerb -> "đi" | "đến"   
+AnimateVerb -> "đi" | "đến" | "thích" | "muốn" | "ở" | "di chuyển" | "tham quan" | "nghỉ ngơi" | "nghỉ dưỡng" | "ăn" | "uống"
+InanimateAdjective -> "đẹp" | "rẻ" | "đắt" | "hỏng" | "xấu"
+AnimateAdjective -> "đẹp" | "bận" | "rảnh" | "vui" | "buồn"
+TimeExpression -> "hôm nay" | "hôm qua" | 'ngày mai'
+Preposition -> "trên" | "trong" | "dưới"
+Conjunction -> "và" | "với"

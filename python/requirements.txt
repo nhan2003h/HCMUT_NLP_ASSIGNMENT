@@ -1,0 +1,11 @@
+openpyxl>=3.0.5 # pandas save excel
+xlrd>=1.2.0
+Click>=7.1.2
+deprecation>=2.1.0
+pandas>=1.1.4
+numpy>=1.19.4
+scipy>=1.5.4
+matplotlib>=3.3.2
+nltk>=3.5
+pyvi>=0.1
+git+https://github.com/thanhhungqb/pyutils

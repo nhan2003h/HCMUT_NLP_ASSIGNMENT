@@ -1,0 +1,32 @@
+Câu hỏi: em có thể nhắc lại tất cả các tour được không?
+Trả lời: Có 6 tour. 
+Tour Phú_Quốc - HCM khởi hành lúc 7AM 1/7 và đến nơi lúc 9AM 1/7,
+Tour Phú_Quốc - HCM khởi hành lúc 8AM 5/7 và đến nơi lúc 10AM 5/7,
+Tour Đà_Nẵng - HCM khởi hành lúc 7AM 1/7 và đến nơi lúc 9AM 1/7,
+Tour Đà_Nẵng - HCM khởi hành lúc 7AM 4/7 và đến nơi lúc 9AM 4/7,
+Tour Nha_Trang - HCM khởi hành lúc 7AM 1/7 và đến nơi lúc 12AM 1/7,
+Tour Nha_Trang - HCM khởi hành lúc 7AM 5/7 và đến nơi lúc 12AM 5/7.
+
+
+Câu hỏi: đi từ Hồ Chí Minh tới Nha Trang hết bao lâu?
+Trả lời: Đi từ HCM đến Nha_Trang mất 5:00 HR.
+
+
+Câu hỏi: đi từ Hồ Chí Minh tới Đà Nẵng hết bao lâu?
+Trả lời: Đi từ HCM đến Đà_Nẵng mất 2:00 HR.
+
+
+Câu hỏi: có bao nhiêu tour đi Phú Quốc vậy bạn?
+Trả lời: Có 2 tour. 
+Tour Phú_Quốc - HCM khởi hành lúc 7AM 1/7 và đến nơi lúc 9AM 1/7,
+Tour Phú_Quốc - HCM khởi hành lúc 8AM 5/7 và đến nơi lúc 10AM 5/7.
+
+
+Câu hỏi: tour Nha Trang đi bằng phương tiện gì vậy?
+Trả lời: Tour Nha_Trang đi bằng xe lửa.
+
+
+Câu hỏi: đi Nha Trang có những ngày nào nhỉ?
+Trả lời: Tour Nha_Trang có thể đi vào các ngày 1/7, 5/7.
+
+

@@ -1,0 +1,39 @@
+Câu hỏi: em có thể nhắc lại tất cả các tour được không?
+(s1 AGENT em)
+(s1 PRED nhắc)
+(s1 QUERY tour)
+
+
+Câu hỏi: đi từ Hồ Chí Minh tới Nha Trang hết bao lâu?
+(s1 PRED đi)
+(s1 SRC (NAME h1 hồ_chí_minh))
+(s1 DES (NAME n1 nha_trang))
+(s1 QUERY bao_lâu)
+
+
+Câu hỏi: đi từ Hồ Chí Minh tới Đà Nẵng hết bao lâu?
+(s1 PRED đi)
+(s1 SRC (NAME h1 hồ_chí_minh))
+(s1 DES (NAME đ1 đà_nẵng))
+(s1 QUERY bao_lâu)
+
+
+Câu hỏi: có bao nhiêu tour đi Phú Quốc vậy bạn?
+(s1 PRED có)
+(s1 QUERY bao_nhiêu)
+(s1 CO_QUERY tour)
+(s1 DES (NAME p1 phú_quốc))
+
+
+Câu hỏi: tour Nha Trang đi bằng phương tiện gì vậy?
+(s1 DES (NAME n1 nha_trang))
+(s1 PRED đi)
+(s1 QUERY phương_tiện)
+
+
+Câu hỏi: đi Nha Trang có những ngày nào nhỉ?
+(s1 PRED đi)
+(s1 DES (NAME n1 nha_trang))
+(s1 QUERY ngày)
+
+

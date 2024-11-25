@@ -1,0 +1,76 @@
+======================================================================
+The sentence: đến homestay xấu
+
+Parsed rule:
+(Sentences
+  (Sentence
+    (Predicate
+      (VerbPhrase
+        (VerbPhrase_
+          (Verb (AnimateVerb đến))
+          (Noun homestay)
+          (Adjective (InanimateAdjective xấu)))))))
+======================================================================
+The sentence: đến khách sạn rẻ
+
+Parsed rule:
+(Sentences
+  (Sentence
+    (Predicate
+      (VerbPhrase
+        (VerbPhrase_
+          (Verb (AnimateVerb đến))
+          (Noun khách sạn)
+          (Adjective (InanimateAdjective rẻ)))))))
+======================================================================
+The sentence: thích thời tiết đẹp
+
+Parsed rule:
+(Sentences
+  (Sentence
+    (Predicate
+      (VerbPhrase
+        (VerbPhrase_
+          (Verb (AnimateVerb thích))
+          (Noun thời tiết)
+          (Adjective (AnimateAdjective đẹp)))))))
+======================================================================
+The sentence: di chuyển phương tiện rẻ
+
+Parsed rule:
+(Sentences
+  (Sentence
+    (Predicate
+      (VerbPhrase
+        (VerbPhrase_
+          (Verb (AnimateVerb di chuyển))
+          (Noun phương tiện)
+          (Adjective (InanimateAdjective rẻ)))))))
+======================================================================
+The sentence: Hà Nội đẹp không
+
+Parsed rule:
+(Sentences
+  (Sentence
+    (Subject (NounPhrase (NounPhrase_ (ProperNoun Hà Nội))))
+    (Predicate (AdjectivePhrase (Adjective (AnimateAdjective đẹp)))))
+  (Wh không))
+======================================================================
+The sentence: hôm qua Singapore này vô cùng đẹp
+
+Parsed rule:
+(Sentences
+  (Sentence
+    (Adverb (TimeAdverb (TimeExpression hôm qua)))
+    (Subject
+      (NounPhrase
+        (NounPhrase_ (ProperNoun Singapore))
+        (PrepositionAfter này)))
+    (Predicate
+      (AdjectivePhrase
+        (AdverbBefore_Adjective vô cùng)
+        (Adjective (AnimateAdjective đẹp))))))
+======================================================================
+The sentence: ngày mai đi Nha Trang không
+Parsed rule:
+Cannot parse:ngày mai đi Nha Trang không

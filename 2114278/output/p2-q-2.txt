@@ -1,0 +1,62 @@
+Câu hỏi: em có thể nhắc lại tất cả các tour được không?
+"nhắc" --adv -> "có_thể"
+"nhắc" --subj -> "em"
+"ROOT" --root -> "nhắc"
+"nhắc" --adv -> "lại"
+"tour" --det -> "các"
+"tour" --det -> "tất_cả"
+"nhắc" --dobj -> "tour"
+"tour" --noun_query -> "được_không"
+
+
+Câu hỏi: đi từ Hồ Chí Minh tới Nha Trang hết bao lâu?
+"ROOT" --root -> "đi"
+"đi" --pp -> "từ"
+"từ" --pobj -> "hồ_chí_minh"
+"từ" --pmod -> "tới"
+"tới" --pobj -> "nha_trang"
+"đi" --vmod -> "hết"
+"hết" --query -> "bao_lâu"
+"hết" --punc -> "?"
+
+
+Câu hỏi: đi từ Hồ Chí Minh tới Đà Nẵng hết bao lâu?
+"ROOT" --root -> "đi"
+"đi" --pp -> "từ"
+"từ" --pobj -> "hồ_chí_minh"
+"từ" --pmod -> "tới"
+"tới" --pobj -> "đà_nẵng"
+"đi" --vmod -> "hết"
+"hết" --query -> "bao_lâu"
+"hết" --punc -> "?"
+
+
+Câu hỏi: có bao nhiêu tour đi Phú Quốc vậy bạn?
+"ROOT" --root -> "có"
+"có" --query -> "bao_nhiêu"
+"tour" --noun_query -> "bao_nhiêu"
+"có" --dobj -> "tour"
+"đi" --subj -> "tour"
+"có" --vmod -> "đi"
+"đi" --nmod -> "phú_quốc"
+"bạn" --det -> "vậy"
+
+
+Câu hỏi: tour Nha Trang đi bằng phương tiện gì vậy?
+"tour" --nmod -> "nha_trang"
+"đi" --subj -> "tour"
+"ROOT" --root -> "đi"
+"đi" --pp -> "bằng"
+"bằng" --pobj -> "phương_tiện"
+"phương_tiện" --noun_query -> "gì"
+
+
+Câu hỏi: đi Nha Trang có những ngày nào nhỉ?
+"ROOT" --root -> "đi"
+"đi" --nmod -> "nha_trang"
+"đi" --vmod -> "có"
+"ngày" --det -> "những"
+"có" --dobj -> "ngày"
+"ngày" --noun_query -> "nào"
+
+

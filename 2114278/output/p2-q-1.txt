@@ -1,0 +1,37 @@
+Trước hết ta định nghĩa các phép RIGHT_ARC và LEFT_ARC sau đây:
+
+RIGHT_ARC: 
+Có dạng (H,R,T), nghĩa là, từ bên trái là H, , mối quan hệ RIGHT_ARC của chúng là R, từ bên phải là T
+NOUN              noun_query        QUERY             
+NOUN              nmod              NAME              
+VERB              punc              PUNCTUATION       
+VERB              nmod              NAME              
+VERB              pp                PREPOSITION       
+VERB              yesno             YESNO             
+VERB              dobj              NOUN              
+VERB              adv               ADVERB            
+VERB              vmod              VERB              
+VERB              query             QUERY             
+PREPOSITION       pobj              NOUN              
+PREPOSITION       pobj              NAME              
+PREPOSITION       pmod              PREPOSITION       
+ROOT              root              VERB              
+
+
+LEFT_ARC: 
+Có dạng H R T, nghĩa là, từ bên trái là H, mối quan hệ LEFT_ARC của chúng là R, từ bên phải là T
+NOUN              subj              VERB              
+NOUN              nmod              NAME              
+QUERY             noun_query        NOUN              
+ADVERB            adv               VERB              
+PRONOUN           det               NOUN              
+DETERMINER        det               NOUN              
+
+Sau khi đã định nghĩa, sử dụng giải thuật MaltParser để phân tích câu.
+
+MaltParser là một giải thuật phân tích cú pháp phụ thuộc dựa trên hệ thống chuyển trạng thái. Giải thuật sử dụng ngăn xếp (stack) và bộ đệm (buffer) để duyệt qua các từ trong câu. Các phép chuyển chính bao gồm:
+- SHIFT: Di chuyển từ đầu của buffer lên stack.
+- RIGHT_ARC: Tạo quan hệ phụ thuộc từ đỉnh stack đến từ đầu buffer và di chuyển từ buffer lên stack.
+- LEFT_ARC: Tạo quan hệ phụ thuộc từ từ đầu buffer đến đỉnh stack và loại bỏ đỉnh stack.
+- REDUCE: Loại bỏ từ đỉnh stack khi từ này đã được xử lý.
+Giải thuật lặp lại các phép chuyển trạng thái cho đến khi buffer rỗng và stack chỉ còn ROOT, trả về cây phụ thuộc hoàn chỉnh.

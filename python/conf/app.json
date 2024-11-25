@@ -1,0 +1,4 @@
+{
+    "call": "hcmut.iaslab.nlp.app.utils.test",
+	"usage": "python -m cli run --json_conf conf/app.json"
+}
